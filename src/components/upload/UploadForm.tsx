@@ -82,6 +82,8 @@ export default function UploadForm() {
 
           const body = new FormData();
 
+          body.append("sometext", someinfo);
+
           for (let i = 0; i < files_data.length; i++) {
             const file = files_data[i];
             if (file) body.append("uploadfile", file);
